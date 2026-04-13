@@ -1,0 +1,5 @@
+{
+  "name": "Parlez-vous ?",
+  "description": "An app to suggest French conversation topics with ideas, vocabulary, and a notepad for missing words.",
+  "requestFramePermissions": []
+}
