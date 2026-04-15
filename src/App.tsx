@@ -171,7 +171,7 @@ export default function App() {
 
   const handleLoginSuccess = (userData: any) => {
     setUser(userData);
-    localStorage.setItem('user', JSON.stringify(userData));
+    localStorage.setItem('user', JSON.stringify({username: userData.username}));
   };
 
   const handleLogout = async () => {
