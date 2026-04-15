@@ -20,6 +20,7 @@ export default function App() {
   const langStr = lang === 'fr' ? 'french' : 'german';
   const practicedStorageKey = lang === 'fr' ? 'french-practiced-topics' : 'german-practiced-topics';
   const missingWordsStorageKey = lang === 'fr' ? 'french-missing-words-data' : 'german-missing-words-data';
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -75,6 +76,7 @@ export default function App() {
         setMissingWords([]);
       }
     }
+    setIsLoading(false);
   }, [user, lang, practicedStorageKey, missingWordsStorageKey, langStr]);
 
   const updateUserDataAPI = async (dataType: string, action: string, data: any) => {
@@ -188,6 +190,7 @@ export default function App() {
     }
   };
 
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
       <header className="bg-white border-b border-slate-200 py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-50">
@@ -281,7 +284,13 @@ export default function App() {
           </div>
         </div>
       </header>
-
+              {isLoading ? (
+                <div className="flex items-center justify-center py-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500"></div>
+                </div>
+              ) : (
+                <div></div>
+              )}
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {currentTopic ? (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
