@@ -49,6 +49,8 @@ export default function App() {
           }
         } catch (e) {
           console.error('Failed to fetch user data', e);
+        } finally {
+          setIsLoading(false);
         }
       };
       fetchUserData();
@@ -56,7 +58,7 @@ export default function App() {
       // Fallback to local storage if not logged in
       const storedPracticed = localStorage.getItem(practicedStorageKey);
       if (storedPracticed) {
-        try { setPracticedTopics(JSON.parse(storedPracticed)); } catch(e) {}
+        try { setPracticedTopics(JSON.parse(storedPracticed)); } catch(e) {} finally {setIsLoading(false);}
       } else {
         setPracticedTopics([]);
       }
@@ -71,12 +73,12 @@ export default function App() {
             d.word.forEach((w: string) => converted.push(`${d.text}:${w}`));
           });
           setMissingWords(converted);
-        } catch(e) {}
+        } catch(e) {} finally {setIsLoading(false);}
       } else {
         setMissingWords([]);
       }
     }
-    setIsLoading(false);
+    
   }, [user, lang, practicedStorageKey, missingWordsStorageKey, langStr]);
 
   const updateUserDataAPI = async (dataType: string, action: string, data: any) => {
