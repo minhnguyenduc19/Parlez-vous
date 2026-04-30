@@ -45,7 +45,7 @@
 | **Data** | MongoDB | MongoDB is an optimal, free database, which is appropiate for apps, which demands high volumns of Reads and Writes (unlike GG Firebase) |
 
 ---
-## Preview
+## 🔍 Preview
 
 <img width="1072" height="900" alt="Screenshot 2026-04-30 at 16 23 36" src="https://github.com/user-attachments/assets/8eaca5ee-aa44-4e70-b1a7-49cdb1a905a1" />
 
