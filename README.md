@@ -1,9 +1,7 @@
-# Project Title: [Your Project Name]
+<img width="1072" height="900" alt="Screenshot 2026-04-30 at 16 23 36" src="https://github.com/user-attachments/assets/8eaca5ee-aa44-4e70-b1a7-49cdb1a905a1" /># Project Title: Parlez-vous
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Active](https://img.shields.io/badge/Status-In--Development-green.svg)]()
-
-A concise, high-level summary of what this project does. Focus on the core value proposition—how it solves a specific problem or assists the user.
 
 ---
 
@@ -11,76 +9,29 @@ A concise, high-level summary of what this project does. Focus on the core value
 * [Overview](#-overview)
 * [Key Features](#-key-features)
 * [Tech Stack](#-tech-stack)
-* [Getting Started](#-getting-started)
 * [Usage](#-usage)
 * [Future Roadmap](#-future-roadmap)
 
 ---
 
 ## 🔍 Overview
-Provide 2-3 sentences explaining the "why" behind the project. Mention the specific challenges faced during development and the primary objective (e.g., creating an efficient management system or a specialized learning tool).
+* A web-app created by and for language-learners.
+* Usage: Provide an environment, where users can pratice preparing and holding a presentation about diverse topics from A1 to B2.
+* Motivation: I'm currently learning French on my-own, it's a hard to pratice speaking, that's why I create this web-app to resolve my own problems and help others.
 
 ## ✨ Key Features
-*   **Dynamic Data Handling:** Efficiently manages and renders complex JSON datasets.
-*   **Responsive UI:** Optimized for both desktop and mobile environments using modern styling frameworks.
-*   **Secure Implementation:** Follows standard security principles to ensure data integrity.
-*   **Cross-Platform Compatibility:** Designed to run smoothly across different architectures (x64/ARM64).
+* Users can fetch a randomly chosen topic with ideas (to talk about) and key vocabulary.
+* There is a field, where users can take notes of the words they don't know, it's then saved in a dedicated place where users can come back and look up for the missing words.
+* All data is saved on cloud, which is carefully saved and sealed, so users won't lose the progress when switching between devices.
 
 ## 🛠 Tech Stack
-| Category | Technology |
-| :--- | :--- |
-| **Frontend** | React, JavaScript / TypeScript |
-| **Backend** | Node.js, Express |
-| **Deployment** | Vercel |
-| **Tools** | Git, Python (Automation scripts) |
-
-## 🚀 Getting Started
-
-### Prerequisites
-*   Node.js (v18.x or higher)
-*   npm or yarn
-
-### Installation
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/your-username/project-repo.git](https://github.com/your-username/project-repo.git)
-    cd project-repo
-    ```
-2.  **Install dependencies# Project Title: [Your Project Name]
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Active](https://img.shields.io/badge/Status-In--Development-green.svg)]()
-
-A concise, high-level summary of what this project does. Focus on the core value proposition—how it solves a specific problem or assists the user.
-
----
-
-## 📖 Table of Contents
-* [Overview](#-overview)
-* [Key Features](#-key-features)
-* [Tech Stack](#-tech-stack)
-* [Getting Started](#-getting-started)
-* [Usage](#-usage)
-* [Future Roadmap](#-future-roadmap)
-
----
-
-## 🔍 Overview
-Provide 2-3 sentences explaining the "why" behind the project. Mention the specific challenges faced during development and the primary objective (e.g., creating an efficient management system or a specialized learning tool).
-
-## ✨ Key Features
-*   **Dynamic Data Handling:** Efficiently manages and renders complex JSON datasets.
-*   **Responsive UI:** Optimized for both desktop and mobile environments using modern styling frameworks.
-*   **Secure Implementation:** Follows standard security principles to ensure data integrity.
-*   **Cross-Platform Compatibility:** Designed to run smoothly across different architectures (x64/ARM64).
-
-## 🛠 Tech Stack
-| Category | Technology |
-| :--- | :--- |
-| **Frontend** | React, JavaScript / TypeScript |
-| **Backend** | Node.js, Express |
-| **Deployment** | Vercel |
-| **Tools** | Git, Python (Automation scripts) |
+| Category | Technology | Why I use it |
+| :--- | :--- | :--- |
+| **Frontend** | React, JavaScript | I love the workflows and of Reactjs, which enables partly load/reload, which enhances the UX of the app |
+| **Backend** | Node.js, Express | This is Programmming Language is familer for Frontend/Js Developers |
+| **Deployment** | Vercel | It's free and very user-friendly |
+| **Content** | Deepseek Generative AI | Deepseek has the ability to accuratedly generate quality contents, which strictly follows and ensures the JSON rules for Data |
+| **Data** | MongoDB | MongoDB is an optimal, free database, which is appropiate for apps, which demands high volumns of Reads and Writes (unlike GG Firebase) |
 
 ## 🚀 Getting Started
 
