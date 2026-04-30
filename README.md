@@ -8,7 +8,7 @@
 ## 📖 Table of Contents
 * [Overview](#-overview)
 * [Key Features](#-key-features)
-* [Security and Integrity](#-security-and-integrity)
+* [Security and Integrity](#%EF%B8%8F-security-and-integrity)
 * [Tech Stack](#-tech-stack)
 * [Preview](#-preview)
 * [Future Roadmap](#-future-roadmap)
