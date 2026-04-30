@@ -1,4 +1,4 @@
-<img width="1072" height="900" alt="Screenshot 2026-04-30 at 16 23 36" src="https://github.com/user-attachments/assets/8eaca5ee-aa44-4e70-b1a7-49cdb1a905a1" /># Project Title: Parlez-vous
+# Project Title: Parlez-vous
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Active](https://img.shields.io/badge/Status-In--Development-green.svg)]()
@@ -8,7 +8,9 @@
 ## 📖 Table of Contents
 * [Overview](#-overview)
 * [Key Features](#-key-features)
+* [Security and Integrity](#-security-and-integrity)
 * [Tech Stack](#-tech-stack)
+* [Preview] (#-preview)
 * [Future Roadmap](#-future-roadmap)
 
 ---
@@ -41,6 +43,11 @@
 | **Deployment** | Vercel | It's free and very user-friendly |
 | **Content** | Deepseek Generative AI | Deepseek has the ability to accuratedly generate quality contents, which strictly follows and ensures the JSON rules for Data |
 | **Data** | MongoDB | MongoDB is an optimal, free database, which is appropiate for apps, which demands high volumns of Reads and Writes (unlike GG Firebase) |
+
+---
+## Preview
+
+<img width="1072" height="900" alt="Screenshot 2026-04-30 at 16 23 36" src="https://github.com/user-attachments/assets/8eaca5ee-aa44-4e70-b1a7-49cdb1a905a1" />
 
 ---
 
