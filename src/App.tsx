@@ -20,7 +20,7 @@ export default function App() {
   const langStr = lang === 'fr' ? 'french' : 'german';
   const practicedStorageKey = lang === 'fr' ? 'french-practiced-topics' : 'german-practiced-topics';
   const missingWordsStorageKey = lang === 'fr' ? 'french-missing-words-data' : 'german-missing-words-data';
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const storedUser = localStorage.getItem('user');
@@ -33,6 +33,7 @@ export default function App() {
 
   useEffect(() => {
     if (user) {
+        setIsLoading(true);
       const fetchUserData = async () => {
         try {
           const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
@@ -192,6 +193,11 @@ export default function App() {
     }
   };
 
+  if(isLoading) {
+                <div className="flex items-center justify-center py-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500"></div>
+                </div>
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-indigo-100 selection:text-indigo-900">
@@ -286,13 +292,6 @@ export default function App() {
           </div>
         </div>
       </header>
-              {isLoading ? (
-                <div className="flex items-center justify-center py-12">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500"></div>
-                </div>
-              ) : (
-                <div></div>
-              )}
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {currentTopic ? (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
