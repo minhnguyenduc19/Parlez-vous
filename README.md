@@ -10,7 +10,7 @@
 * [Key Features](#-key-features)
 * [Security and Integrity](#-security-and-integrity)
 * [Tech Stack](#-tech-stack)
-* [Preview] (#-preview)
+* [Preview](#-preview)
 * [Future Roadmap](#-future-roadmap)
 
 ---
